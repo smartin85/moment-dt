@@ -36,7 +36,7 @@ define(["moment-timezone-with-data", "moment-dt"], function (moment) {
 ```
 
 
-## Createing a moment from a dt-object
+## Creating a moment from a dt-object
 
 ```js
 var obj = { ts: 1486920600, tz: "Europe/Berlin" };
