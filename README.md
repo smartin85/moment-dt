@@ -2,6 +2,7 @@
 [![MIT License][license-image]][license-url] 
 [![Build Status][travis-image]][travis-url]
 [![Dependency Status][versioneye-image]][versioneye-url]
+[![npm version][npm-image]][npm-url]  
 
 
 Convert utc-unix-timestamp-with-timezone-objects from and to moment.js
