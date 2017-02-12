@@ -1,6 +1,6 @@
 {
   "name": "moment-dt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert timestamp-with-timezone-objects from and to moment.js",
   "main": "moment-dt.js",
   "scripts": {

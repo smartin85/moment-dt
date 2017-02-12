@@ -11,7 +11,7 @@
 }(this, function (moment) {
 	"use strict";
 
-    var VERSION = "1.0.0";
+    var VERSION = "1.0.1";
 
     if(!moment.tz) {
         throw new Error("Can't find moment-timezone");
