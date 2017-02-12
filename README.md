@@ -87,8 +87,8 @@ moment.dt({ ts: 1486920600, tz: "Europe/Berlin" }).add(1, 'year').dt();
 [travis-url]: http://travis-ci.org/smartin85/moment-dt
 [travis-image]: https://travis-ci.org/smartin85/moment-dt.svg?branch=master
 
-[versioneye-image]: https://www.versioneye.com/user/projects/58a0655f940b230032da590e/badge.svg
-[versioneye-url]: https://www.versioneye.com/user/projects/58a0655f940b230032da590e
+[versioneye-image]: https://www.versioneye.com/user/projects/58a098466a7781004a93fadb/badge.svg
+[versioneye-url]: https://www.versioneye.com/user/projects/58a098466a7781004a93fadb
 
 [npm-image]: https://badge.fury.io/js/moment-dt.svg
 [npm-url]: https://badge.fury.io/js/moment-dt
