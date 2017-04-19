@@ -1,12 +1,14 @@
 module.exports = function (config) {
+    const package = require('./package.json');
+    //console.log(package);
     config.set({
         basePath: '',
         frameworks: ['jasmine'],
         files: [
             'node_modules/moment/moment.js',
-            'tests/moment-timezone-with-data.js',
+            'tests/unit-tests/moment-timezone-with-data.js',
             'moment-dt.js',
-            'tests/moment-dt.spec.js'
+            'tests/unit-tests/moment-dt.spec.js'
         ],
         exclude: [],
         reporters: ['progress', 'coverage', 'coveralls'],
@@ -23,10 +25,10 @@ module.exports = function (config) {
             'karma-eslint'
         ],
         globals: {
-            packageVersion: require('./package.json').version
+            packageVersion: package.version
         },
         preprocessors: {
-            'tests/moment-dt.spec.js': ['global', 'eslint'],
+            'tests/unit-tests/moment-dt.spec.js': ['global', 'eslint'],
             'moment-dt.js': ['coverage', 'eslint']
         },
         coverageReporter: {
