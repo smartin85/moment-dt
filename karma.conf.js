@@ -30,8 +30,10 @@ module.exports = function (config) {
             'moment-dt.js': ['coverage', 'eslint']
         },
         coverageReporter: {
-            type: 'lcov',
-            dir: 'coverage/'
+            reporters: [
+                { type: 'lcov',  dir: 'coverage/'},
+                { type: 'text' }
+            ]
         },
         eslint: {
             stopOnError: false,
