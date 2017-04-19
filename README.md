@@ -1,6 +1,7 @@
 # moment-dt
 [![MIT License][license-image]][license-url] 
 [![Build Status][travis-image]][travis-url]
+[![Coverage Status][coveralls-image]][coveralls-url]
 [![Dependency Status][versioneye-image]][versioneye-url]
 [![npm version][npm-image]][npm-url]  
 
@@ -87,6 +88,9 @@ moment.dt({ ts: 1486920600, tz: "Europe/Berlin" }).add(1, 'year').dt();
 
 [travis-url]: http://travis-ci.org/smartin85/moment-dt
 [travis-image]: https://travis-ci.org/smartin85/moment-dt.svg?branch=master
+
+[coveralls-url]: https://coveralls.io/github/smartin85/moment-dt
+[coveralls-image]: https://coveralls.io/repos/github/smartin85/moment-dt/badge.svg
 
 [versioneye-image]: https://www.versioneye.com/user/projects/58a098466a7781004a93fadb/badge.svg
 [versioneye-url]: https://www.versioneye.com/user/projects/58a098466a7781004a93fadb
