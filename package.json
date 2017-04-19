@@ -4,7 +4,12 @@
   "description": "Convert timestamp-with-timezone-objects from and to moment.js",
   "main": "moment-dt.js",
   "scripts": {
-    "test": "gulp test"
+    "test": "npm run prod:test",
+    "start": "run-p dev:*",
+    "dev:test": "karma start",
+    "build": "run-s prod:*",
+    "prod:minify": "uglifyjs --compress --mangle -- moment-dt.js > moment-dt.min.js",
+    "prod:test": "karma start --singleRun"
   },
   "repository": {
     "type": "git",
@@ -27,14 +32,16 @@
     "moment-timezone": "^0.5.11"
   },
   "devDependencies": {
-    "gulp": "~3.9.1",
-    "gulp-uglifyjs": "~0.6.2",
     "jasmine-core": "~2.5.2",
     "karma": "1.6.0",
     "karma-chrome-launcher": "~2.0.0",
+    "karma-coverage": "^1.1.1",
+    "karma-coveralls": "^1.1.2",
+    "karma-eslint": "^2.2.0",
     "karma-global-preprocessor": "~0.0.2",
     "karma-jasmine": "~1.1.0",
     "karma-phantomjs-launcher": "~1.0.2",
-    "run-sequence": "~1.2.2"
+    "npm-run-all": "^4.0.2",
+    "uglify-js": "2.8.22"
   }
 }

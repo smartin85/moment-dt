@@ -9,6 +9,7 @@ module.exports = function (config) {
             'tests/moment-dt.spec.js'
         ],
         exclude: [],
+        reporters: ['progress', 'coverage', 'coveralls'],
         port: 8080,
         logLevel: config.LOG_INFO,
         autoWatch: true,
@@ -16,13 +17,29 @@ module.exports = function (config) {
         plugins: [
             'karma-jasmine',
             'karma-phantomjs-launcher',
-            'karma-global-preprocessor'
+            'karma-global-preprocessor',
+            'karma-coverage',
+            'karma-coveralls',
+            'karma-eslint'
         ],
         globals: {
             packageVersion: require('./package.json').version
         },
         preprocessors: {
-            'tests/moment-dt.spec.js': ['global']
+            'tests/moment-dt.spec.js': ['global', 'eslint'],
+            'moment-dt.js': ['coverage', 'eslint']
+        },
+        coverageReporter: {
+            type: 'lcov',
+            dir: 'coverage/'
+        },
+        eslint: {
+            stopOnError: false,
+            stopOnWarning: false,
+            showWarnings: true,
+            engine: {
+                configFile: '.eslintrc'
+            }
         },
         singleRun: false
     });
