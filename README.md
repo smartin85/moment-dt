@@ -104,5 +104,5 @@ moment.dt({ ts: 1486920600, tz: "Europe/Berlin" }).add(1, 'year').dt();
 [versioneye-image]: https://www.versioneye.com/user/projects/58a098466a7781004a93fadb/badge.svg
 [versioneye-url]: https://www.versioneye.com/user/projects/58a098466a7781004a93fadb
 
-[snyk-image]: https://snyk.io/test/github/smartin85/moment-period/badge.svg
-[snyk-url]: https://snyk.io/test/github/smartin85/moment-period
+[snyk-image]: https://snyk.io/test/github/smartin85/moment-dt/badge.svg
+[snyk-url]: https://snyk.io/test/github/smartin85/moment-dt
