@@ -38,6 +38,11 @@ define(["moment-timezone-with-data", "moment-dt"], function (moment) {
 });
 ```
 
+### Bower
+```
+bower install --save moment-dt
+```
+
 
 ## Creating a moment from a dt-object
 
