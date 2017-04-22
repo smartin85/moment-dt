@@ -1,10 +1,12 @@
 # moment-dt
 [![MIT License][license-image]][license-url] 
+[![npm version][npm-image]][npm-url]
+[![Bower version][bower-image]][bower-url]
+
 [![Build Status][travis-image]][travis-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
 [![Dependency Status][versioneye-image]][versioneye-url]
-[![npm version][npm-image]][npm-url]  
-
+[![Known Vulnerabilities][snyk-image]][snyk-url]
 
 Convert utc-unix-timestamp-with-timezone-objects from and to moment.js
 
@@ -86,14 +88,22 @@ moment.dt({ ts: 1486920600, tz: "Europe/Berlin" }).add(1, 'year').dt();
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
 
-[travis-url]: http://travis-ci.org/smartin85/moment-dt
-[travis-image]: https://travis-ci.org/smartin85/moment-dt.svg?branch=master
+[npm-image]: https://badge.fury.io/js/moment-dt.svg
+[npm-url]: https://badge.fury.io/js/moment-dt
 
-[coveralls-url]: https://coveralls.io/github/smartin85/moment-dt
+[bower-image]: https://badge.fury.io/bo/moment-dt.svg
+[bower-url]: https://badge.fury.io/bo/moment-dt
+
+
+
+[travis-image]: https://travis-ci.org/smartin85/moment-dt.svg?branch=master
+[travis-url]: http://travis-ci.org/smartin85/moment-dt
+
 [coveralls-image]: https://coveralls.io/repos/github/smartin85/moment-dt/badge.svg
+[coveralls-url]: https://coveralls.io/github/smartin85/moment-dt
 
 [versioneye-image]: https://www.versioneye.com/user/projects/58a098466a7781004a93fadb/badge.svg
 [versioneye-url]: https://www.versioneye.com/user/projects/58a098466a7781004a93fadb
 
-[npm-image]: https://badge.fury.io/js/moment-dt.svg
-[npm-url]: https://badge.fury.io/js/moment-dt
+[snyk-image]: https://snyk.io/test/github/smartin85/moment-period/badge.svg
+[snyk-url]: https://snyk.io/test/github/smartin85/moment-period
