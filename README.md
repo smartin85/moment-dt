@@ -2,7 +2,6 @@
 [![MIT License][license-image]][license-url] 
 [![npm version][npm-image]][npm-url]
 [![Bower version][bower-image]][bower-url]
-
 [![Build Status][travis-image]][travis-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
 [![Dependency Status][versioneye-image]][versioneye-url]
