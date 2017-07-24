@@ -1,6 +1,6 @@
 {
   "name": "moment-dt",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Convert timestamp-with-timezone-objects from and to moment.js",
   "main": "moment-dt.js",
   "typings": "./moment-dt.d.ts",
@@ -10,6 +10,7 @@
     "dev:test": "karma start",
     "build": "run-s prod:*",
     "prod:minify": "uglifyjs --compress --mangle -- moment-dt.js > moment-dt.min.js",
+    "prod:test": "run-s prod:test:*",
     "prod:test:unit": "karma start --singleRun",
     "prod:test:typings": "tsc --project tests/typings-tests"
   },
@@ -34,10 +35,10 @@
     "moment-timezone": "^0.5.11"
   },
   "devDependencies": {
-    "@types/moment-timezone": "^0.2.34",
-    "jasmine-core": "2.5.2",
-    "karma": "1.6.0",
-    "karma-chrome-launcher": "2.0.0",
+    "@types/moment-timezone": "0.2.34",
+    "jasmine-core": "2.6.4",
+    "karma": "1.7.0",
+    "karma-chrome-launcher": "2.2.0",
     "karma-coverage": "1.1.1",
     "karma-coveralls": "1.1.2",
     "karma-eslint": "2.2.0",
@@ -45,7 +46,7 @@
     "karma-jasmine": "1.1.0",
     "karma-phantomjs-launcher": "1.0.4",
     "npm-run-all": "4.0.2",
-    "typescript": "2.2.2",
-    "uglify-js": "2.8.22"
+    "typescript": "2.4.2",
+    "uglify-js": "3.0.26"
   }
 }
