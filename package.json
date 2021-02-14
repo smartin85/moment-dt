@@ -11,7 +11,7 @@
     "test:typings": "tsc --project tests/typings-tests",
     "start": "npm run test:dev",
     "build": "uglifyjs --compress --mangle -- moment-dt.js > moment-dt.min.js",
-    "sprepare": "npm run build && npm test"
+    "prepare": "npm run build && npm test"
   },
   "repository": {
     "type": "git",
