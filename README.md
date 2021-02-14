@@ -5,6 +5,8 @@
 [![Coverage Status][coveralls-image]][coveralls-url]
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 
+[![Buy me a coffee][buy-me-a-coffee-image]][buy-me-a-coffee-url]
+
 Convert utc-unix-timestamp-with-timezone-objects from and to moment.js
 
 ## Getting Started
@@ -87,7 +89,7 @@ moment.dt({ ts: 1486920600, tz: "Europe/Berlin" }).add(1, 'year').dt();
 // }
 ```
 
-[license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
+[license-image]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
 
 [npm-image]: https://badge.fury.io/js/moment-dt.svg
@@ -104,3 +106,6 @@ moment.dt({ ts: 1486920600, tz: "Europe/Berlin" }).add(1, 'year').dt();
 
 [azure-pipeline-image]: https://dev.azure.com/smartin85/moment-dt/_apis/build/status/smartin85.moment-dt?branchName=master
 [azure-pipeline-url]: https://dev.azure.com/smartin85/moment-dt/_build/latest?definitionId=3&branchName=master
+
+[buy-me-a-coffee-image]: https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png
+[buy-me-a-coffee-url]: https://www.buymeacoffee.com/smartin
