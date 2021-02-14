@@ -1,6 +1,7 @@
 # moment-dt
 [![MIT License][license-image]][license-url] 
 [![npm version][npm-image]][npm-url]
+[![npm downloads][downloads-image]][npm-url]
 [![Build Status][azure-pipeline-image]][azure-pipeline-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
 [![Known Vulnerabilities][snyk-image]][snyk-url]
@@ -93,13 +94,12 @@ moment.dt({ ts: 1486920600, tz: "Europe/Berlin" }).add(1, 'year').dt();
 [license-url]: LICENSE
 
 [npm-image]: https://badge.fury.io/js/moment-dt.svg
-[npm-url]: https://badge.fury.io/js/moment-dt
+[npm-url]: https://www.npmjs.com/package/moment-dt
+
+[downloads-image]: https://img.shields.io/npm/dt/moment-dt.svg
 
 [coveralls-image]: https://coveralls.io/repos/github/smartin85/moment-dt/badge.svg
 [coveralls-url]: https://coveralls.io/github/smartin85/moment-dt
-
-[versioneye-image]: https://www.versioneye.com/user/projects/58a098466a7781004a93fadb/badge.svg
-[versioneye-url]: https://www.versioneye.com/user/projects/58a098466a7781004a93fadb
 
 [snyk-image]: https://snyk.io/test/github/smartin85/moment-dt/badge.svg
 [snyk-url]: https://snyk.io/test/github/smartin85/moment-dt
