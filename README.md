@@ -1,6 +1,7 @@
 # moment-dt
 [![MIT License][license-image]][license-url] 
 [![npm version][npm-image]][npm-url]
+[![Build Status][azure-pipeline-image]][azure-pipeline-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 
@@ -100,3 +101,6 @@ moment.dt({ ts: 1486920600, tz: "Europe/Berlin" }).add(1, 'year').dt();
 
 [snyk-image]: https://snyk.io/test/github/smartin85/moment-dt/badge.svg
 [snyk-url]: https://snyk.io/test/github/smartin85/moment-dt
+
+[azure-pipeline-image]: https://dev.azure.com/smartin85/moment-dt/_apis/build/status/smartin85.moment-dt?branchName=master
+[azure-pipeline-url]: https://dev.azure.com/smartin85/moment-dt/_build/latest?definitionId=3&branchName=master
