@@ -18,6 +18,10 @@ describe("moment-dt", function () {
 		expect(typeof moment.fn.dt).toBe("function");
 	});
 
+	it("should create an invalid moment for a not defined dt", function () {
+		expect(moment.dt().format("YYYY-MM-DD HH:mm:ss")).toBe("Invalid date");
+	});
+
 	it("should convert a valid dt-object to a moment", function () {
 		expect(moment.dt({ ts: 1486920600, tz: "Europe/Berlin" }).format("YYYY-MM-DD HH:mm:ss")).toBe("2017-02-12 18:30:00");
 	});

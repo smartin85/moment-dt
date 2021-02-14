@@ -1,6 +1,7 @@
 module.exports = function (config) {
     const package = require('./package.json');
-    //console.log(package);
+    const testTarget = `moment-dt${process.env.MINIFIED_TESTS ? '.min' : ''}.js`;
+    console.log(`Testing ${testTarget} ...`);
     config.set({
         basePath: '',
         frameworks: ['jasmine'],
@@ -15,10 +16,10 @@ module.exports = function (config) {
         port: 8080,
         logLevel: config.LOG_INFO,
         autoWatch: true,
-        browsers: ['PhantomJS'],
+        browsers: ['ChromeHeadless'],
         plugins: [
             'karma-jasmine',
-            'karma-phantomjs-launcher',
+            'karma-chrome-launcher',
             'karma-global-preprocessor',
             'karma-coverage',
             'karma-coveralls',
@@ -31,7 +32,7 @@ module.exports = function (config) {
             'tests/unit-tests/moment-dt.spec.js': ['global', 'eslint'],
             'moment-dt.js': ['coverage', 'eslint']
         },
-        coverageReporter: {
+        coverageReporter: process.env.MINIFIED_TESTS ? undefined : {
             reporters: [
                 { type: 'lcov',  dir: 'coverage/'},
                 { type: 'text' }
